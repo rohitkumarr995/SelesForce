@@ -23,7 +23,8 @@ public class LoginTest extends BaseSalesforces{
 		hp = new Homepage(driver);
 		hp.getUsername().sendKeys("abcd");
 		hp.getPassword().sendKeys("1234");
-		hp.getLogin().click();		
+		hp.getLogin().click();
+		System.out.println("Logged in??");
 	}
 	
 	@Test(priority=2)
