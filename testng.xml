@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+<listeners>
+	<listener class-name="Automation.Salesforce.ListenerTest"/>
+</listeners>
+
+  <test name="LoginTest">
+    <classes>
+      <class name="Automation.Salesforce.LoginTest"/>
+    </classes>
+  </test>
+  
+  <test name="PrivacyTest">
+    <classes>
+      <class name="Automation.Salesforce.PrivacyPage"/>
+    </classes>
+  </test>
+  
+</suite> <!-- Suite -->

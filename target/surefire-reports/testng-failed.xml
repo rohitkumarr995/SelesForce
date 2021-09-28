@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="Automation.Salesforce.ListenerTest"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="PrivacyTest(failed)" parallel="tests">
+    <classes>
+      <class name="Automation.Salesforce.PrivacyPage">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="getPrivacy"/>
+        </methods>
+      </class> <!-- Automation.Salesforce.PrivacyPage -->
+    </classes>
+  </test> <!-- PrivacyTest(failed) -->
+  <test thread-count="5" verbose="0" name="LoginTest(failed)" parallel="tests">
+    <classes>
+      <class name="Automation.Salesforce.LoginTest">
+        <methods>
+          <include name="getTextStatus"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- Automation.Salesforce.LoginTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
